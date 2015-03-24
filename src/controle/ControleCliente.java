@@ -20,7 +20,7 @@ public class ControleCliente {
     public static void carregarDados() throws IOException, ClassNotFoundException{
         
         ObjectInputStream ois = new ObjectInputStream(
-                new FileInputStream("c:\\temp\\dados.bin"));
+                new FileInputStream("c:\\temp\\clientes.bin"));
         bancoClientes = (HashMap<String, Cliente>)
                 ois.readObject();
         ois.close();
@@ -28,7 +28,7 @@ public class ControleCliente {
     
     public static void armazenarDados() throws IOException{
         ObjectOutputStream oos = new ObjectOutputStream(
-                new FileOutputStream("c:\\temp\\dados.bin"));
+                new FileOutputStream("c:\\temp\\clientes.bin"));
         oos.writeObject(bancoClientes);
         oos.flush();
         oos.close();
