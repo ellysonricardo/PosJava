@@ -357,7 +357,7 @@ public class JFPrincipal extends javax.swing.JFrame {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(JFPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        atualizarTabela(); // estava faltando isso para recuperar a tabela.
     }//GEN-LAST:event_mnuRecuperarClienteActionPerformed
 
     private void mnuSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuSairActionPerformed
