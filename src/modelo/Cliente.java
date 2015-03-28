@@ -9,6 +9,7 @@ public class Cliente implements Serializable{
     private String endereco;
     private String telefone;
 
+//teste para aula
     public Cliente(String cpf, String nome, String endereco, String telefone) {
         this.cpf = cpf;
         this.nome = nome;
